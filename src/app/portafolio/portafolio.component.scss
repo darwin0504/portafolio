@@ -1,0 +1,27 @@
+body {
+    background-color: #212223;
+}
+
+nav {
+    background-color: #1b1c1c;
+}
+
+.text-color-two {
+    text-shadow: 0 5px 20px #008cff;
+}
+
+.text,
+.text-color {
+    color: #008cff;
+    text-shadow: 0 0 20px #008cff;
+}
+
+.text:hover {
+    text-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+a:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
