@@ -8,7 +8,8 @@ import { PortafolioComponent } from './portafolio/portafolio.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    
   ],
   imports: [
     BrowserModule,

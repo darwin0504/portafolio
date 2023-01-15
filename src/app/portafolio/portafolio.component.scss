@@ -3,7 +3,12 @@ body {
 }
 
 nav {
-    background-color: #1b1c1c;
+    background-color: #00000049;
+    backdrop-filter: blur(20px);
+}
+
+ .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .text-color-two {
@@ -21,7 +26,35 @@ nav {
         0 0 100px rgb(0, 140, 255);
 }
 
-a:hover {
+.click:hover {
     box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255), 0 0 50px rgb(0, 140, 255),
         0 0 100px rgb(0, 140, 255);
+}
+
+.card-one {
+    width: 18rem;
+    box-shadow: 0 0 10px rgb(0, 140, 255), 0 0 10px rgb(0, 140, 255), 0 0 10px rgb(0, 140, 255);
+}
+
+.card-two {
+    padding-top: 7rem;
+    @media (min-width: 992px) {
+        padding-top: 15rem;
+    }
+}
+
+.card-three {
+    padding-top: 7rem;
+
+    @media (min-width: 992px) {
+        padding-top: 0;
+    }
+}
+
+div[id] {
+    scroll-margin-top: 130px;
+}
+
+.space {
+    padding-bottom: 10rem;
 }

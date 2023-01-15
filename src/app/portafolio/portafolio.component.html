@@ -1,71 +1,153 @@
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <!-- nav -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid shadow-sm">
             <a class="navbar-brand px-5" href="#"><img src="/assets/img/logo.jpg" alt="logo" width="60rem"></a>
             <button class="navbar-toggler text" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end px-lg-5 py-3" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link text fs-5 fw-bold pe-lg-5" aria-current="page" href="#about">
-                            Sobre mí
-                        </a>
+                        <a class="nav-link text fs-5 fw-bold pe-lg-5" aria-current="page" href="#/about">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text fs-5 fw-bold pe-lg-5" href="#work">
-                            Mi trabajo
-                        </a>
+                        <a class="nav-link text fs-5 fw-bold pe-lg-5" href="#/experience">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text fs-5 fw-bold pe-lg-5" href="#contact">
-                            Contacto
-                        </a>
+                        <a class="nav-link text fs-5 fw-bold pe-lg-5" href="#/Projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/assets/files/CV-Darwin-Bedoya.pdf" type="button" class="btn btn-outline-primary"
-                            target="_blank" download="CV-Darwin-Bedoya">Descargar CV</a>
+                        <a class="nav-link text fs-5 fw-bold pe-lg-5" href="#/contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/assets/files/CV-Darwin-Bedoya.pdf" type="button" class="btn click btn-outline-primary"
+                            target="_blank" download="CV-Darwin-Bedoya.pdf">Descargar CV</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container background-color p-5">
-        <div class="pb-5 px-lg-5 m-lg-5">
-            <div class="pb-5">
-                <h4 class="text-color">Hola, mi nombre es</h4>
-                <p class="text-white fw-bold display-2 ">Darwin Bedoya</p>
-                <p class="text-white fw-bold display-5 ">Frontend Developer</p>
-                <h3 class="text-white fw-bold">fgudkghdghgeorjeir</h3>
+    <!-- contents -->
+    <div class="container px-5 pt-5 pb-1">
+        <div class="px-lg-5 m-lg-5">
+            <div class="space">
+                <h4 class="text-color">Hola ✌️, mi nombre es</h4>
+                <p class="text-white fw-bold display-2">Darwin Bedoya</p>
+                <p class="text-white fw-bold display-5">Frontend Developer</p>
+                <h3 class="text-white fw-bold">Tecnólogo en Análisis y desarrollo de sistemas de información,<br>
+                    actualmente cursando ingeniería telemática
+                </h3>
             </div>
 
-            <div id="about" class="row pt-5">
+            <!-- about -->
+            <div id="/about" class="row space">
                 <div class="col-12 col-lg-7 pb-5 text-white">
                     <h4 class="text-color-two">Sobre mí</h4><br>
                     <h3>Desarrollador web con capacidades para apoyar en diseños de sitios informativos y
-                        mejorar la
-                        eficiencia de estos. Soy comprometido, dispuesto a adaptarme a cualquier entorno y
-                        aportar
-                        mi
-                        conocimiento.
+                        mejorar la eficiencia de estos. Soy comprometido, dispuesto a adaptarme a cualquier entorno y
+                        aportar mi conocimiento.
                     </h3>
                 </div>
                 <div class="col-12 col-lg-5 text-white px-lg-5">
                     <div class="px-lg-5">
-                        <h4 class="text-white text-color-two">Conocimientos</h4><br>
-                        <ul>
-                            <li>HTML</li>
-                            <li>SCSS</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>SQL</li>
-                            <li>Angular</li>
-                        </ul>
+                        <h4 class="text-white text-color-two">Tecnologías</h4><br>
+                        <img src="/assets/img/html-css-js.png" alt="html-css-js" class="img-fluid">
+                        <img src="/assets/img/ts-bootstrap-angular.png" alt="html-css-js" class="img-fluid pt-5">
                     </div>
                 </div>
             </div>
+
+            <!-- experience -->
+            <div id="/experience" class="space text-white">
+                <h4 class="text-color-two mb-5">Experiencia</h4>
+                <div class="d-lg-flex justify-content-center">
+                    <div class="pe-lg-5 pt-4">
+                        <div class="card card-one bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollador junior</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">SMART PAYMENTS SAS</h6>
+                                <p class="card-text">
+                                <p>Noviembre 2021 - Diciembre 2022</p>
+                                <ul>
+                                    <li>Estructura y mantenimiento del sitio web</li>
+                                    <li>Implementación de diseños</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vr bg-info"></div>
+                    <div class="ps-lg-5 card-two">
+                        <div class="card card-one bg-transparent">
+                            <div class="card-body">
+                                <h5 class="card-title">Analista de mesa de ayuda</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">SMART PAYMENTS SAS</h6>
+                                <p class="card-text">
+                                <p>Abril 2021 - octubre 2021</p>
+                                <ul>
+                                    <li>Apoyo en funciones de mesa de ayuda</li>
+                                    <li>Generación de reportes solicitados</li>
+                                    <li>Desarrollo web y procesos de certificaciones de desarrollo de Software</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div id="/Projects" class="space text-white">
+                <h4 class="text-color-two pb-4">Proyectos</h4><br><br>
+                <div class="d-lg-flex justify-content-around">
+                    <div class="card click bg-transparent border border-2 border-primary" style="width: 18rem;">
+                        <img src="/assets/img/efipay.png" class="card-img-top" alt="efipay">
+                        <div class="card-body">
+                            <h5 class="card-title">Efipay</h5>
+                            <p class="card-text">Es una página de inicio, que muestra las principales funciones que
+                                realiza efipay.</p><br>
+                            <a href="https://efipay.co" target="_blank" class="btn btn-primary">Ir a la
+                                página</a>
+                        </div>
+                    </div>
+                    <div class="card-three">
+                        <div class="card click bg-transparent border border-3 border-primary" style="width: 18rem;">
+                            <img src="/assets/img/pokemon.png" class="card-img-top" alt="pokemon">
+                            <div class="card-body">
+                                <h5 class="card-title">Pokédex</h5>
+                                <p class="card-text">Es una página que permite ver los detalles de algunos pokémon, la
+                                    cual solicita un usuario para poder ingresar.</p>
+                                <a href="https://web-pokemon-api.netlify.app" target="_blank" class="btn btn-primary">Ir
+                                    a la página</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="https://github.com/darwin0504/pokemon" target="_blank"
+                                    class="btn btn-primary">Repositorio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div id="/contact" class=" text-white">
+                <h4 class="text-color-two">Contacto</h4><br>
+                <div class="d-flex justify-content-evenly text-center">
+                    <!-- email -->
+                    <a class="fa-solid fa-envelope display-5 text-decoration-none text-danger"
+                        (click)="copyEmail('darwinbedoya05@gmail.com')"></a>
+                    <!-- linkedin -->
+                    <a class="fa-brands fa-linkedin display-5 text-decoration-none" target="_blank"
+                        href="https://www.linkedin.com/in/darwin-bedoya"></a>
+                    <!-- github -->
+                    <a class="fa-brands fa-github display-5 text-decoration-none text-white" target="_blank"
+                        href="https://github.com/darwin0504"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white pt-5">
+            <p>Copyright © 2023 Darwin Bedoya</p>
         </div>
     </div>
 </body>
