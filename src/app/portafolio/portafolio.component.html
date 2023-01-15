@@ -45,7 +45,7 @@
             <!-- about -->
             <div id="/about" class="row space">
                 <div class="col-12 col-lg-7 pb-5 text-white">
-                    <h4 class="text-color-two">Sobre mí</h4><br>
+                    <h4 class="text-color-two fw-bold">Sobre mí</h4><br>
                     <h3>Desarrollador web con capacidades para apoyar en diseños de sitios informativos y
                         mejorar la eficiencia de estos. Soy comprometido, dispuesto a adaptarme a cualquier entorno y
                         aportar mi conocimiento.
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-12 col-lg-5 text-white px-lg-5">
                     <div class="px-lg-5">
-                        <h4 class="text-white text-color-two">Tecnologías</h4><br>
+                        <h4 class="text-white text-color-two fw-bold">Tecnologías</h4><br>
                         <img src="/assets/img/html-css-js.png" alt="html-css-js" class="img-fluid">
                         <img src="/assets/img/ts-bootstrap-angular.png" alt="html-css-js" class="img-fluid pt-5">
                     </div>
@@ -62,7 +62,7 @@
 
             <!-- experience -->
             <div id="/experience" class="space text-white">
-                <h4 class="text-color-two mb-5">Experiencia</h4>
+                <h4 class="text-color-two mb-5 fw-bold">Experiencia</h4>
                 <div class="d-lg-flex justify-content-center">
                     <div class="pe-lg-5 pt-4">
                         <div class="card card-one bg-transparent">
@@ -99,12 +99,12 @@
 
             <!-- Projects -->
             <div id="/Projects" class="space text-white">
-                <h4 class="text-color-two pb-4">Proyectos</h4><br><br>
+                <h4 class="text-color-two pb-4 fw-bold">Proyectos</h4><br><br>
                 <div class="d-lg-flex justify-content-around">
                     <div class="card click bg-transparent border border-2 border-primary" style="width: 18rem;">
                         <img src="/assets/img/efipay.png" class="card-img-top" alt="efipay">
                         <div class="card-body">
-                            <h5 class="card-title">Efipay</h5>
+                            <h5 class="card-title text text-white fw-bold">Efipay</h5>
                             <p class="card-text">Es una página de inicio, que muestra las principales funciones que
                                 realiza efipay.</p><br>
                             <a href="https://efipay.co" target="_blank" class="btn btn-primary">Ir a la
@@ -115,7 +115,7 @@
                         <div class="card click bg-transparent border border-3 border-primary" style="width: 18rem;">
                             <img src="/assets/img/pokemon.png" class="card-img-top" alt="pokemon">
                             <div class="card-body">
-                                <h5 class="card-title">Pokédex</h5>
+                                <h5 class="card-title text text-white fw-bold">Pokédex</h5>
                                 <p class="card-text">Es una página que permite ver los detalles de algunos pokémon, la
                                     cual solicita un usuario para poder ingresar.</p>
                                 <a href="https://web-pokemon-api.netlify.app" target="_blank" class="btn btn-primary">Ir
@@ -130,11 +130,15 @@
 
             <!-- contact -->
             <div id="/contact" class=" text-white">
-                <h4 class="text-color-two">Contacto</h4><br>
+                <h4 class="text-color-two fw-bold">Contacto</h4><br>
                 <div class="d-flex justify-content-evenly text-center">
                     <!-- email -->
-                    <a class="fa-solid fa-envelope display-5 text-decoration-none text-danger"
-                        (click)="copyEmail('darwinbedoya05@gmail.com')"></a>
+                    <div>
+                        <a class="fa-solid fa-envelope display-5 text-decoration-none text-danger"
+                            (click)="copyEmail('darwinbedoya05@gmail.com')"><br>
+                        </a>
+                        <p *ngIf="active" class="text fw-bold">Copiado!</p>
+                    </div>
                     <!-- linkedin -->
                     <a class="fa-brands fa-linkedin display-5 text-decoration-none" target="_blank"
                         href="https://www.linkedin.com/in/darwin-bedoya"></a>
@@ -142,6 +146,8 @@
                     <a class="fa-brands fa-github display-5 text-decoration-none text-white" target="_blank"
                         href="https://github.com/darwin0504"></a>
                 </div>
+
+
             </div>
         </div>
 

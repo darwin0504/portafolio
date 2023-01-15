@@ -8,11 +8,16 @@ import * as copy from 'copy-to-clipboard';
 })
 export class PortafolioComponent {
 
+  public active = false;
 
   copyEmail(text: string) {
     console.log(text);
     copy(text, {
     });
-  };
 
+    this.active = true;
+    setTimeout(() => {
+      this.active = false;
+    }, 2000);
+  };
 }
